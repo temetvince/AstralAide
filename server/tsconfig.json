@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+      "allowImportingTsExtensions": false,
+      "allowJs": true,
+      "allowSyntheticDefaultImports": true,
+      "emitDecoratorMetadata": true,
+      "esModuleInterop": true,
+      "experimentalDecorators": true,
+      "forceConsistentCasingInFileNames": true,
+      "isolatedModules": true,
+      "jsx": "react",
+      "lib": [
+        "dom",
+        "dom.iterable",
+        "esnext"
+      ],
+      "module": "NodeNext",
+      "moduleResolution": "NodeNext",
+      "newLine": "LF",
+      "noEmit": false,
+      "noFallthroughCasesInSwitch": true,
+      "outDir": "dist",
+      "resolveJsonModule": true,
+      "skipLibCheck": true,
+      "sourceMap": true,
+      "strict": true,
+      "target": "ESNext",
+      "typeRoots": [
+        "./node_modules/**/@types",
+        "./src/**/@types"
+      ]
+  },
+  "exclude": [
+    "node_modules",
+    "src/**/*.spec.*ts*"
+  ],
+  "include": [
+    "src/**/*.*ts*",
+  ]
+}

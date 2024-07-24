@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+
+:root {
+   --font-primary: "Oswald", sans-serif;
+
+   --text-xl: 2rem;
+   --text-lg: 1.8rem;
+   --text-md: 1.5rem;
+   --text-sm: 1.2rem;
+   --text-xs: 1rem;
+
+   --global-light: #cbcdd2;
+   --global-dark: #1c1d21;
+   --global-darkest: #0f1012;
+   --global-light-grey: #848794;
+   --global-grey: #5d5d5d;
+   --global-dark-grey: #45474f;
+
+   --secondary-color: #4fb4d8;
+   --primary-color: #8c5c15;
+   --success-color: #ef7c2a;
+   --danger-color: #395333;
+   --warning-color: #76a1a5;
+
+   --background: #000000;
+   --background-alt: var(--global-dark);
+   --text-color: var(--secondary-color);
+   --text-color-alt: var(--success-color);
+   --hover-color: var(--text-color-alt);
+   --hover-color-alt: var(--text-color);
+
+   --box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.45);
+   --inset-box-shadow: inset var(--box-shadow);
+
+   --spacing: 1rem;
+   --spacing-less: 0.25rem;
+   --spacing-more: 3rem;
+
+   --box-rounding: 5px;
+   --border-size: 3px;
+   --border-style: solid;
+   --border-color: var(--success-color);
+   --border-color-alt: var(--secondary-color);
+}
+
+*,
+*::before,
+*::after {
+   box-sizing: border-box;
+   min-width: auto;
+   margin: 0;
+   padding: 0;
+   font-weight: normal;
+}
+
+body {
+   text-transform: uppercase;
+   background: var(--background);
+   color: var(--text-color);
+   min-height: 100%;
+   transition:
+      color 0.5s,
+      background-color 0.5s;
+   line-height: 3;
+   font-size: smaller;
+   font-weight: bold;
+   font-family:
+      var(--font-primary),
+      Inter,
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      Roboto,
+      Oxygen,
+      Ubuntu,
+      Cantarell,
+      "Fira Sans",
+      "Droid Sans",
+      "Helvetica Neue",
+      sans-serif;
+   text-rendering: optimizeLegibility;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+   background-image: radial-gradient(
+         var(--secondary-color),
+         rgba(255, 255, 255, 0.2) 5px,
+         transparent 40px
+      ),
+      radial-gradient(
+         var(--success-color),
+         rgba(255, 255, 255, 0.15) 1px,
+         transparent 30px
+      ),
+      radial-gradient(
+         var(--success-color),
+         rgba(255, 255, 255, 0.1) 2px,
+         transparent 40px
+      ),
+      radial-gradient(
+         rgba(255, 255, 255, 0.4),
+         rgba(255, 255, 255, 0.1) 2px,
+         transparent 30px
+      );
+   background-size:
+      550px 550px,
+      350px 350px,
+      250px 250px,
+      150px 150px;
+   background-position:
+      0 0,
+      40px 60px,
+      130px 270px,
+      70px 100px;
+}
+
+ul {
+   list-style: none;
+}
+
+li {
+   padding: var(--spacing-less);
+}
+
+h1,
+h2,
+h3,
+h4 {
+   color: var(--text-color);
+}
+
+button {
+   display: inline-block;
+   text-decoration: none;
+   border: var(--border-color) var(--border-size) solid;
+   background: black;
+   color: var(--text-color);
+   border-radius: var(--box-rounding);
+   font-weight: bold;
+   font-size: larger;
+   line-height: 1.5;
+   text-align: center;
+}
+
+button:hover {
+   color: var(--hover-color);
+}
+
+a {
+   display: inline-block;
+   text-decoration: none;
+   border: var(--border-color) var(--border-size) solid;
+   background: black;
+   color: var(--text-color);
+   border-radius: var(--box-rounding);
+   font-weight: bold;
+   font-size: larger;
+   line-height: 1.5;
+   text-align: center;
+}
+
+a:hover {
+   color: var(--hover-color);
+}
+
+p {
+   margin: var(--spacing-less) 0;
+}
+
+img {
+   width: 100%;
+   display: block;
+}
+
+hr {
+   width: 75%;
+}
+
+input,
+textarea {
+   width: 100%;
+   background: var(--global-dark);
+   color: var(--primary-color);
+   border: var(--primary-color) var(--border-size) solid;
+   border-radius: var(--box-rounding);
+   padding: var(--spacing-less) var(--spacing-less);
+   margin: var(--spacing-less) var(--spacing-less);
+}

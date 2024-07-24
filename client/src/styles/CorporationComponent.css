@@ -1,0 +1,53 @@
+.imagePortrait {
+   width: auto;
+   height: auto;
+   border: var(--success-color) var(--border-size) solid;
+   border-radius: var(--box-rounding);
+   padding: 5px 5px;
+}
+
+.imagePortraitContainer {
+   max-width: 234px;
+   max-height: 234px;
+   display: flex;
+   flex-direction: column;
+}
+
+.characterDescription {
+   text-align: justify;
+}
+
+.corporationOneContainer {
+   display: flex;
+   border: var(--secondary-color) var(--border-size) solid;
+   border-radius: var(--box-rounding);
+   width: 500px;
+   height: 500px;
+}
+
+.corporationTwoContainer {
+   display: flex;
+   width: 250px;
+   height: 500px;
+   gap: 5px;
+}
+
+.corporationThreeContainer {
+   display: flex;
+   flex-direction: column;
+   width: 250px;
+   height: 500px;
+   gap: 5px;
+   padding: 5px;
+}
+
+.descriptions {
+   display: flex;
+   position: relative;
+   align-items: center;
+   align-self: center;
+   justify-content: space-between;
+   transform: translate(-2.5px, -37px);
+   height: 0px;
+   width: 200px;
+}

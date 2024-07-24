@@ -1,0 +1,59 @@
+.embed {
+   display: flex;
+   flex-direction: column;
+   width: 250px;
+   height: 500px;
+   gap: 5px;
+   padding: 5px;
+}
+
+.characterContainer {
+   display: flex;
+   flex-direction: column;
+   gap: 5px;
+   width: 250px;
+   height: 500px;
+   border: var(--secondary-color) var(--border-size) solid;
+   border-radius: var(--box-rounding);
+   padding: 5px;
+}
+
+.characterContainerEmbedded {
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   width: 250px;
+   height: 500px;
+}
+
+.characterDescription {
+   text-align: justify;
+}
+
+.description {
+   display: flex;
+   position: relative;
+   align-self: center;
+   justify-content: right;
+   transform: translate(0px, -55px);
+   height: 0px;
+   width: 200px;
+}
+
+.bio {
+   padding-left: 5px;
+   padding-right: 5px;
+   width: 234px;
+   gap: 5px;
+}
+
+.fixedWidth {
+   width: 5rem;
+}
+
+.splitText {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   color: var(--text-color-alt);
+}
